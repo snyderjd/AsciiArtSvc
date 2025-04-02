@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mediUJvZEfE=",
+  "success": true,
+  "projectFilePath": "/home/snyderjd/Workspace/AsciiArtSvc/AsciiArtSvc.csproj",
+  "expectedPackageFiles": [
+    "/home/snyderjd/.nuget/packages/figgle/0.5.1/figgle.0.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
