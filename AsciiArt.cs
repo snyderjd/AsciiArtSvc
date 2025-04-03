@@ -1,4 +1,5 @@
 using Figgle;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
 using System.Reflection;
 
 namespace AsciiArtSvc;
@@ -18,4 +19,14 @@ public static class AsciiArt
         font ??= FiggleFonts.Standard;
         return font.Render(text);
     }
+
+    public static Lazy<IEnumerable<(string Name, FiggleFont Font)>> AllFonts =
+        new (() =>
+            from p in typeof(FiggleFonts)
+                .GetProperties(BindingFlags.Public | BindingFlags.Static)
+                select (
+                    Name: p.Name,
+                    Font: p.GetValue(null) as FiggleFont
+                )
+        );
 }

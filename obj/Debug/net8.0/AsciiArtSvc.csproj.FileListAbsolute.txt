@@ -26,3 +26,4 @@
 /home/snyderjd/Workspace/AsciiArtSvc/bin/Debug/net8.0/Figgle.dll
 /home/snyderjd/Workspace/AsciiArtSvc/obj/Debug/net8.0/AsciiArtSvc.csproj.AssemblyReference.cache
 /home/snyderjd/Workspace/AsciiArtSvc/obj/Debug/net8.0/AsciiArt.AC4477AF.Up2Date
+/home/snyderjd/Workspace/AsciiArtSvc/obj/Debug/net8.0/AsciiArtSvc.sourcelink.json
