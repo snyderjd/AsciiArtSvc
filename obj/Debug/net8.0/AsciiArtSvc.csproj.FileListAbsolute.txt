@@ -27,3 +27,9 @@
 /home/snyderjd/Workspace/AsciiArtSvc/obj/Debug/net8.0/AsciiArtSvc.csproj.AssemblyReference.cache
 /home/snyderjd/Workspace/AsciiArtSvc/obj/Debug/net8.0/AsciiArt.AC4477AF.Up2Date
 /home/snyderjd/Workspace/AsciiArtSvc/obj/Debug/net8.0/AsciiArtSvc.sourcelink.json
+/home/snyderjd/Workspace/AsciiArtSvc/bin/Debug/net8.0/BarcodeStandard.dll
+/home/snyderjd/Workspace/AsciiArtSvc/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+/home/snyderjd/Workspace/AsciiArtSvc/bin/Debug/net8.0/System.Drawing.Common.dll
+/home/snyderjd/Workspace/AsciiArtSvc/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/home/snyderjd/Workspace/AsciiArtSvc/bin/Debug/net8.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/snyderjd/Workspace/AsciiArtSvc/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll

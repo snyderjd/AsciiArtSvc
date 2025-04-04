@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BarcodeLib" Version="2.4.0" />
+    <!-- <PackageReference Include="BarcodeLib" Version="3.1.5" /> -->
     <PackageReference Include="Figgle" Version="0.5.1" />
   </ItemGroup>
 

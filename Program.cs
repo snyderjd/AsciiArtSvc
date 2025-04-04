@@ -1,3 +1,7 @@
+using BarcodeLib;
+using System.Drawing;
+using System.Drawing.Imaging;
+
 using Figgle;
 using AsciiArtSvc;
 
@@ -5,11 +9,6 @@ const StringComparison SCIC = StringComparison.OrdinalIgnoreCase;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
-
-// app.MapGet("/", (int? skip, int? take) =>
-//     AsciiArt.AllFonts.Value
-//         .Skip(skip ?? 0)
-//         .Take(take ?? 100));
 
 app.MapGet("/",
     (
@@ -38,6 +37,16 @@ app.MapGet("/",
             .Select(f => f.Name);
     });
 
-app.MapGet("/{text}", (string text, string? font) => AsciiArt.Write(text, font));
+app.MapGet("/barcode/{text}", (string text) => {
+    var barcode = new Barcode();
+    barcode.ImageFormat = ImageFormat.Jpeg;
+    _ = barcode.Encode(TYPE.CODE128, text, Color.Black, Color.White);
+    return Results.File(barcode.Encoded_Image_Bytes, "image/jpeg");
+});
+
+app.MapGet("/{text}", (string text, string? font) =>
+    AsciiArt.Write(text, out var asciiText, font)
+        ? Results.Content(asciiText)
+        : Results.NotFound());
 
 app.Run();
